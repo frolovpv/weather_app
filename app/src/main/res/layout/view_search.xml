@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:orientation="horizontal"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/searchStartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        app:srcCompat="@drawable/ic_search" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/searchInput"
+        style="@style/SearchView.Default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="12dp"
+        android:layout_weight="1"
+        android:hint="@string/enter_city"
+        android:imeOptions="actionSearch"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:alpha="0.5"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="16sp"
+        android:theme="@style/SearchView" />
+
+    <ImageView
+        android:id="@+id/searchClear"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="8dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="4dp"
+        app:srcCompat="@drawable/ic_search_clear" />
+
+</merge>

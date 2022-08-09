@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PageIndicatorView">
+        <attr name="dotsCount" format="integer" />
+        <attr name="dotDiameter" format="dimension" />
+        <attr name="dotSpacing" format="dimension" />
+        <attr name="dotAnimationDuration" format="integer" />
+
+        <attr name="dotEmptyBackground" format="reference" />
+        <attr name="dotFilledBackground" format="reference" />
+        <attr name="dotWrongBackground" format="reference" />
+
+        <attr name="dotBackground" format="reference" />
+        <attr name="dotEmptyColor" format="integer" />
+        <attr name="dotFilledColor" format="integer" />
+        <attr name="dotWrongColor" format="integer" />
+
+        <attr name="dotsIndicatorType" format="enum">
+            <enum name="fill" value="0" />
+            <enum name="fillWithAnimation" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>

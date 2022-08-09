@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+
+        <TextView
+            android:id="@+id/updatedAt"
+            style="@style/GeneralTextViewStyle"
+            android:layout_marginTop="24dp"
+            android:textSize="12sp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/cityName"
+            style="@style/GeneralTextViewStyle"
+            android:layout_marginTop="12dp"
+            android:textSize="26sp"
+            />
+
+        <TextView
+            android:id="@+id/cityCurrentWeatherTemp"
+            style="@style/GeneralTextViewStyle"
+            android:textSize="60sp"
+            android:fontFamily="@font/sf_pro_semibold"
+            />
+
+        <TextView
+            android:id="@+id/cityCurrentWeather"
+            style="@style/GeneralTextViewStyle"
+            android:layout_marginTop="4dp"
+            android:textSize="26sp"
+            />
+
+        <TextView
+            android:id="@+id/feelsLike"
+            style="@style/GeneralTextViewStyle"
+            android:fontFamily="@font/sf_pro_semibold"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/windSpeed"
+            style="@style/GeneralTextViewStyle"
+            android:fontFamily="@font/sf_pro_semibold"
+            android:textSize="14sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp"
+            >
+            <TextView
+                android:id="@+id/sunrise"
+                style="@style/GeneralTextViewStyle"
+                android:fontFamily="@font/sf_pro_semibold"
+                android:textSize="14sp"
+                android:gravity="start"
+                android:drawableStart="@drawable/sunrise"
+                android:layout_weight="0.5"
+                android:layout_width="wrap_content"
+                android:drawableTint="@color/white"
+                android:layout_marginStart="32dp"
+                />
+            <TextView
+                android:id="@+id/sunset"
+                style="@style/GeneralTextViewStyle"
+                android:fontFamily="@font/sf_pro_semibold"
+                android:textSize="14sp"
+                android:gravity="end"
+                android:layout_weight="0.5"
+                android:layout_width="wrap_content"
+                android:drawableTint="@color/white"
+                android:drawableEnd="@drawable/sunset"
+                android:layout_marginEnd="32dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            >
+            <TextView
+                android:id="@+id/minTemp"
+                style="@style/GeneralTextViewStyle"
+                android:fontFamily="@font/sf_pro_semibold"
+                android:textSize="14sp"
+                android:gravity="start"
+                android:layout_weight="0.5"
+                android:layout_marginStart="32dp"
+                />
+            <TextView
+                android:id="@+id/maxTemp"
+                style="@style/GeneralTextViewStyle"
+                android:fontFamily="@font/sf_pro_semibold"
+                android:textSize="14sp"
+                android:gravity="end"
+                android:layout_weight="0.5"
+                android:layout_marginEnd="32dp"
+                />
+        </LinearLayout>
+
+        <com.cappasity.weatherapp.presentation.view.ThreeDaysForecastView
+            android:layout_marginTop="16dp"
+            android:id="@+id/threeDaysForecastView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
